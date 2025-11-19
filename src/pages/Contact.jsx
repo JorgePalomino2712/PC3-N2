@@ -2,22 +2,30 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <section className="max-w-6xl mx-auto py-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">Klean — Beautifully simple landing</h1>
-                    <p className="mt-4 text-lg text-slate-600">Sigue el diseño del Figma y reemplaza los textos y gráficos por los tuyos.</p>
-                    <div className="mt-6 flex gap-3">
-                        <a href="/projects" className="px-5 py-3 rounded-2xl font-semibold shadow hover:shadow-md transition">Get started</a>
-                        <a href="/features" className="px-5 py-3 rounded-2xl border">Learn more</a>
-                    </div>
-                </div>
+        <section className="relative overflow-hidden flex flex-col gap-12 items-center justify-center max-w-6xl mx-auto py-16">
+            <h2 className='text-2xl font-bold mt-6'>Contact Us</h2>
+
+            <div className="absolute inset-0 -z-10 bg-[url('/7.contact/image1.png')] bg-cover bg-center"></div>
 
 
-                <div className="bg-gradient-to-br from-red-50 to-white rounded-2xl p-8">
-                    <div className="h-64 w-full rounded-lg bg-white/60 border-dashed border-2 border-red-100 flex items-center justify-center">Place hero image</div>
+            <div className="relative z-20 flex flex-row gap-14 items-start">
+                <form className="bg-transparent backdrop-blur-md p-6 flex flex-col w-[400px] rounded-xl shadow-xl">
+                    <input placeholder='Write your name' type="text" className="border p-2 rounded-md mb-2 bg-white" />
+                    <input placeholder='Write your email' type="text" className="border p-2 rounded-md mb-2 bg-white" />
+                    <input placeholder='Write your message' type="text" className="border p-2 rounded-md mb-2 bg-white" />
+                    <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 rounded-xl ">
+                        Submit
+                    </button>
+                </form>
+
+                <div className=" flex flex-col text-xl font-semibold text-white drop-shadow-lg">
+                    <span className='text-gray-600'>📞 +955038229</span>
+                    <span className='text-gray-600'>📪 jorgeps2712@gmail.com</span>
+                    <span className='text-gray-600'>📍 Peru</span>
                 </div>
             </div>
         </section>
+
+
     )
 }
